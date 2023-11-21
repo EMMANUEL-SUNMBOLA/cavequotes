@@ -10,15 +10,23 @@ nav{
     h1{
         font-size: 25px;
         color: #0d1432;
-        display: inline-block;
+        // display: inline-block;
     }
     .navwrap{
-        display: inline-block;
-        // margin-left: auto;
-        input[type="checkbox"]{
-            width: 100px;
+        // display: inline-block;
+        margin-left: auto;
+        padding-right: 2%;
+        button[name="themeBtn"]{
+            width: 70px;
             height: 40px;
             border-radius: 90%;
+        }
+        .link{
+            text-decoration: none;
+            color: black;
+            i{
+              font-size: 22px;
+            }
         }
     }
 }

@@ -1,3 +1,53 @@
 @use 'variables';
 @use 'nav';
 
+main{
+    height: 100vh;
+    background-color: variables.$bodybg;
+    color: variables.$bodycol;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+
+    .mainsub{
+        width: 50%;
+        height: 100px;
+        padding: 2%;
+    }
+    
+    .right{
+        // outline: 1px solid red;
+        .quote{
+            width: 500px;
+            height: 100px;
+            background-color: #1ec1ad;
+            border: 1px solid;
+            font-size: 20px;
+            color: #4a2cd3;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
+   
+    .left{
+        button[id="quoteBtn"]{
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            text-transform: uppercase;
+            background-color: variables.$yellow;
+            color: variables.$blak;
+            outline: none;
+            border: none;
+            transition: variables.$trans;
+            &:hover{
+                background: none;
+                color: variables.$yellow;
+                outline: 1px solid ;
+            }
+        }
+    }
+
+}
