@@ -1,0 +1,25 @@
+@use 'variables';
+
+nav{
+    background-color: variables.$quote;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    h1{
+        font-size: 25px;
+        color: #0d1432;
+        display: inline-block;
+    }
+    .navwrap{
+        display: inline-block;
+        // margin-left: auto;
+        input[type="checkbox"]{
+            width: 100px;
+            height: 40px;
+            border-radius: 90%;
+        }
+    }
+}
+
