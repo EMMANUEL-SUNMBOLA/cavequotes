@@ -1,10 +1,13 @@
 @use 'variables';
 @use 'nav';
 
+body{
+    background-color: variables.$black;
+}
 main{
-    height: 100vh;
-    background-color: variables.$bodybg;
-    color: variables.$bodycol;
+    height: 90vh;
+    // background-color: variables.$bodybg;
+    color: variables.$gray;
     display: flex;
     align-items: center;
     // justify-content: center;
@@ -32,19 +35,32 @@ main{
     }
    
     .left{
+        .msg{
+            width: 400px;
+            height: 50px;
+            background-color: variables.$fff;
+            display: flex;
+            align-items: center;
+            background-color: variables.$gray;
+            color: variables.$black;
+            h1{
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+        }
         button[id="quoteBtn"]{
             width: 200px;
             height: 40px;
             font-size: 20px;
             text-transform: uppercase;
-            background-color: variables.$yellow;
+            background-color: variables.$green;
             color: variables.$blak;
             outline: none;
             border: none;
             transition: variables.$trans;
             &:hover{
                 background: none;
-                color: variables.$yellow;
+                color: variables.$neon;
                 outline: 1px solid ;
             }
         }
