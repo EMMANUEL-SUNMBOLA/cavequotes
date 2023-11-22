@@ -7,14 +7,21 @@ const themeToggle = ()=>{
     }else{
         body.classList.add('light');
         icon.classList.replace('fa-sun', 'fa-moon');
-        // alert('toorr');
     }
 }
 
 async function fetchQuote(){
+    let tweetLink = document.querySelector('#tweetLink');
     let disp = document.querySelector('.quote');
     let link = 'https://api.quotable.io/random';
     let response = await fetch(link);
-    let quote = await response.json();
-    disp.textContent = quote['content'];
+    let quoteObj = await response.json();
+    disp.textContent = quoteObj['content'];
+    let splitContent = quoteObj['content'].split(' ');
+    let text = "";
+    for(let i = 0; i < splitContent.length; i++){
+        text += splitContent[i] + "%20";
+    }
+    text = 'https://x.com/intent/tweet?text=' + text;
+    tweetLink.setAttribute('href', text);
 }
