@@ -4,6 +4,12 @@
 body{
     background-color: variables.$black;
 }
+.light{
+    background-color: variables.$fff;
+    main{
+        color: variables.$black;
+    }
+}
 main{
     height: 90vh;
     // background-color: variables.$bodybg;
