@@ -23,12 +23,15 @@ nav{
             width: 70px;
             height: 40px;
             border-radius: 90%;
+            i{
+                font-size: 20px;
+            }
         }
         .link{
             text-decoration: none;
-            color: black;
+            color: variables.$fff;
             i{
-              font-size: 22px;
+              font-size: 26px;
             }
         }
     }

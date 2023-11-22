@@ -1,1 +1,17 @@
 @use 'variables';
+
+.light{
+    background-color: variables.$fff;
+
+    nav{
+        .navwrap{
+            .link{
+                color: variables.$black;
+            }
+        }
+    }
+
+    main{
+        color: variables.$black;
+    }
+}

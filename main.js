@@ -1,10 +1,12 @@
 const themeToggle = ()=>{
-    let btn = document.querySelector('#themeBtn');
     let body = document.querySelector('#body');
+    let icon = document.querySelector('.fa-solid');
     if(body.classList.contains('light')){
         body.classList.remove('light');
+        icon.classList.replace('fa-moon', 'fa-sun');
     }else{
         body.classList.add('light');
-        alert('toorr');
+        icon.classList.replace('fa-sun', 'fa-moon');
+        // alert('toorr');
     }
 }
