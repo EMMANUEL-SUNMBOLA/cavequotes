@@ -10,3 +10,10 @@ const themeToggle = ()=>{
         // alert('toorr');
     }
 }
+
+async function fetchQuote(){
+    let link = 'https://api.quotable.io/random';
+    let response = await fetch(link);
+    let quote = await response.json();
+    console.log(quote['content']);
+}
