@@ -12,8 +12,9 @@ const themeToggle = ()=>{
 }
 
 async function fetchQuote(){
+    let disp = document.querySelector('.quote');
     let link = 'https://api.quotable.io/random';
     let response = await fetch(link);
     let quote = await response.json();
-    console.log(quote['content']);
+    disp.textContent = quote['content'];
 }
