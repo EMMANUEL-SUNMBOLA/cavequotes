@@ -41,4 +41,28 @@ const copy = ()=>{
         alert("Copied the text: " + copyText.value);
 }
 
-// https://twitter.com/intent/tweet?text=Yesterday%20is%20history,%20tomorrow%20is%20a%20mystery,%20today%20is%20God%27s%20gift,%20that%27s%20why%20we%20call%20it%20the%20present.&hashtags=DIQs,Wisdom&url=http://bit.ly/amazing-quotes
+
+function copyInnerText() {
+    // Select the text within the div
+    const textToCopy = document.querySelector('.quote').innerText;
+    alert('alive')
+
+    // Create a temporary textarea element
+    const textarea = document.createElement('textarea');
+    textarea.value = textToCopy;
+
+    // Append the textarea to the document
+    document.body.appendChild(textarea);
+
+    // Select the text in the textarea
+    textarea.select();
+
+    // Copy the selected text
+    document.execCommand('copy');
+
+    // Remove the temporary textarea
+    document.body.removeChild(textarea);
+
+    // Optionally, you can provide feedback to the user
+    alert('Text copied to clipboard: ' + textToCopy);
+}
