@@ -104,7 +104,6 @@ main{
 
 @media(max-width:768px){
     main{
-        outline: 1px solid red;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -112,6 +111,7 @@ main{
         // margin-top: 100%;
        .mainsub{
         height: fit-content;
+        width: fit-content;
        }
     }
 }
