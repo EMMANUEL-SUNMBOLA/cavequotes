@@ -85,6 +85,7 @@ main{
     .left{
         .msg{
             width: 400px;
+            height: 70%;
             display: flex;
             align-items: center;
             background-color: variables.$gray;
@@ -121,7 +122,7 @@ main{
 
 @media(max-width:768px){
     main{
-        // height: 80vh;
+        height: 80vh;
         flex-direction: column;
         justify-content: center;
         .right{
