@@ -28,6 +28,7 @@ main{
             height: fit-content;
             p{
                 display: flex;
+                padding: 2% 2%;
                 i{
                     color:  variables.$fff;
                     font-size: 70px;
@@ -40,9 +41,9 @@ main{
                 justify-content: end;
             }
             .quote{
-                padding: 10%;
+                padding: 8%;
                 font-family: 'Roboto', sans-serif;
-                font-size: 20px;
+                font-size: 25px;
                 color:  variables.$fff;
                 display: flex;
                 align-items: center;
@@ -123,6 +124,11 @@ main{
         justify-content: center;
         .right{
             .quoteDiv{
+                p{
+                    i{
+                        font-size: 60px;
+                    }
+                }
                 .quote{
                     font-size: 20px;
                 }
