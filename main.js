@@ -26,43 +26,15 @@ async function fetchQuote(){
     tweetLink.setAttribute('href', text); 
 }
 
-const copy = ()=>{
-        /* Get the text field */
-        var copyText = document.querySelector(".quote");
-      
-        /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-      
-         /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
-      
-        /* Alert the copied text */
-        alert("Copied the text: " + copyText.value);
-}
 
 
 function copyInnerText() {
-    // Select the text within the div
     const textToCopy = document.querySelector('.quote').innerText;
-    alert('alive')
-
-    // Create a temporary textarea element
     const textarea = document.createElement('textarea');
     textarea.value = textToCopy;
-
-    // Append the textarea to the document
     document.body.appendChild(textarea);
-
-    // Select the text in the textarea
     textarea.select();
-
-    // Copy the selected text
     document.execCommand('copy');
-
-    // Remove the temporary textarea
     document.body.removeChild(textarea);
-
-    // Optionally, you can provide feedback to the user
     alert('Text copied to clipboard: ' + textToCopy);
 }
