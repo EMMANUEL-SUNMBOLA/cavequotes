@@ -8,25 +8,29 @@ body{
 }
 
 main{
+    outline: 1px solid red;
     height: 90vh;
-    color: variables.$gray;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .mainsub{
+        outline: 1px solid red;
         width: 50%;
         height: 100px;
         padding: 2%;
     }
     
     .right{
+        outline: 1px solid red;
         .quoteDiv{
-            outline: 1px solid  variables.$neon;
+            outline: 1px solid red;
+            // outline: 1px solid  variables.$neon;
             background-color: variables.$neon;
             width: 100%;
             height: fit-content;
             p{
+                outline: 1px solid red;
                 display: flex;
                 padding: 2% 2%;
                 i{
@@ -88,7 +92,6 @@ main{
         .msg{
             width: 400px;
             height: 50px;
-            background-color: variables.$fff;
             display: flex;
             align-items: center;
             background-color: variables.$gray;
@@ -97,9 +100,14 @@ main{
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 20px;
-                margin-bottom: 1%;
             }
+            
         }
+        .tab{
+            // margin-bottom: 2%;
+            color: variables.$fff;
+        }
+        
         button[id="quoteBtn"]{
             width: 200px;
             height: 40px;

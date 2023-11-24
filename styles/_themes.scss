@@ -13,5 +13,10 @@
 
     main{
         color: variables.$black;
+        .left{
+            .tab{
+                color: variables.$black;
+            }
+        }
     }
 }
