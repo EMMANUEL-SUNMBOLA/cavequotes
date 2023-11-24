@@ -13,10 +13,12 @@ const themeToggle = ()=>{
 async function fetchQuote(){
     let tweetLink = document.querySelector('#tweetLink');
     let disp = document.querySelector('.quote');
+    let author = document.querySelector('#author');
     let link = 'https://api.quotable.io/random';
     let response = await fetch(link);
     let quoteObj = await response.json();
     disp.textContent = quoteObj['content'];
+    author.textContent = quoteObj['author'];
     let splitContent = quoteObj['content'].split(' ');
     let text = "";
     for(let i = 0; i < splitContent.length; i++){
