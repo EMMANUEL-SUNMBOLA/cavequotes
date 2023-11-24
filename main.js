@@ -22,10 +22,9 @@ async function fetchQuote(){
     for(let i = 0; i < splitContent.length; i++){
         text += splitContent[i] + "%20";
     }
-    text = 'https://x.com/intent/tweet?text=' + text + '&hashtags=CaveQuotes,Wisdom&url=';
+    text = 'https://x.com/intent/tweet?text=' + text + '&hashtags=CaveQuotes,Wisdom&url=https://bit.ly/cave-quotes';
     tweetLink.setAttribute('href', text); 
 }
-
 
 
 function copyInnerText() {
