@@ -118,6 +118,9 @@ main{
        }
        .left{
         width: 100%;
+        .msg{
+            width: 50%;
+        }
        }
        button[id="quoteBtn"]{
         width: 150px;
