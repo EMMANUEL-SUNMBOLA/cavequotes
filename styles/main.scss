@@ -122,7 +122,7 @@ main{
 
 @media(max-width:768px){
     main{
-        height: 80vh;
+        height: max-content;
         flex-direction: column;
         justify-content: center;
         .right{
