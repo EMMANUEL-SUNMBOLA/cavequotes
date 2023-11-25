@@ -39,3 +39,10 @@ function copyInnerText() {
     document.body.removeChild(textarea);
     alert('Text copied to clipboard: ' + textToCopy);
 }
+
+const toggleVis = ()=>{
+    let visToggleBtn = document.querySelector('visBtn');
+    let floatingMenu = 'g'
+    // addEventListener(visToggleBtn, 'click')
+
+}
