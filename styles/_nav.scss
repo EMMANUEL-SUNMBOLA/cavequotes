@@ -14,14 +14,17 @@ nav{
         font-size: 20px;
         font-weight: 100;
         // display: inline-block;
+        padding-left: 1rem;
     }
     .navwrap{
         // display: inline-block;
         margin-left: auto;
         padding-right: 2%;
+        // gap: 20rem;
         button[name="themeBtn"]{
             width: 70px;
             height: 40px;
+            margin-right: 1rem;
             // border-radius: 90%;
             i{
                 font-size: 20px;
