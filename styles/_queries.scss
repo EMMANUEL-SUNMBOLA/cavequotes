@@ -1,0 +1,49 @@
+@use 'variables';
+
+@media(max-width:768px){
+    main{
+        height: max-content;
+        flex-direction: column-reverse;
+        justify-content: center;
+        .right{
+            .quoteDiv{
+                p{
+                    i{
+                        font-size: 60px;
+                    }
+                }
+                .quote{
+                    font-size: 1rem;
+                }
+            }
+        }
+       .mainsub{
+        height: fit-content;
+        width: 90%;
+       }
+       .left{
+        .msg{
+            width: 100%;
+        }
+       }
+       button[id="quoteBtn"]{
+        width: 150px;
+       }
+    }
+    .floatingMenu{
+        width: 80%;
+        // left: 150%;
+        // align-items: center;
+        // justify-content: center;
+        .formCont{
+            justify-self: center;
+            align-items: center;
+            justify-content: center;
+            form{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
