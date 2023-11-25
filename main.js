@@ -41,8 +41,11 @@ function copyInnerText() {
 }
 
 const toggleVis = ()=>{
-    let visToggleBtn = document.querySelector('visBtn');
-    let floatingMenu = 'g'
-    // addEventListener(visToggleBtn, 'click')
-
+    let floatingMenu = document.querySelector('.floatingMenu');
+    if((floatingMenu.style.display === 'none') || (floatingMenu.style.display === '')){
+        floatingMenu.style.display = 'block'
+    }else{
+        floatingMenu.style.display = 'none'
+    }
+    event.preventDefault();
 }
