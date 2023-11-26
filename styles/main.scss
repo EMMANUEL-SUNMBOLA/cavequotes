@@ -125,8 +125,6 @@ main{
 
 }
 
-
-
 .bellDiv{
     position: fixed;
     width: 3rem;
@@ -161,7 +159,7 @@ main{
     width: 70%;
     height: 20rem;
     top: 25%;
-    left: 20%;
+    left: 15%;
     background-color:  variables.$fff;
     transition: variables.$trans;
     box-shadow:
@@ -231,7 +229,7 @@ main{
     }
     .floatingMenu{
         width: 80%;
-        // left: 150%;
+        left: 10%;
         // align-items: center;
         // justify-content: center;
         .formCont{
