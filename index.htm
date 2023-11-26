@@ -15,9 +15,9 @@
     <nav>
         <h1>CAVEQUOTES</h1>
         <div class="navwrap">
-            <!-- this is supposed to be a toggle switch, i will add it soon or not too complicated -->
+            <!-- this is supposed to be a toggle switch, i will add it soon or not ,too complicated -->
             <!-- <input type="checkbox" name="" id=""> -->
-            <button name="themeBtn" data-theme="dark" onclick="themeToggle()"><i class="fa-solid fa-sun"></i></button>
+            <button name="themeBtn" id="themeBtn" data-theme="dark"><i class="fa-solid fa-sun"></i></button>
             <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA/cavequotes" class="link git"><i class="fa-brands fa-github"></i></a>
         </div>
     </nav>
@@ -32,7 +32,7 @@
                 <h1>supercharge your day</h1>
             </div>
             <h1 class="tab">Quotes to keep you going</h1>
-            <button id="quoteBtn" onclick="fetchQuote()">fetch</button>
+            <button id="quoteBtn" >fetch</button>
         </div>
 
         <div class="mainsub right">
@@ -45,7 +45,7 @@
                 </div>
                 <h6 id="author">-Caveman</h6>
                 <p class="right"><i class="fa-solid fa-quote-right"></i></p>
-                <button id="copyBtn" onclick="copyInnerText()"><i class="fa-solid fa-copy"></i></button>
+                <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
                 <!-- this is the button that takes the screenshot--> 
                 <!-- i've assigned it an ID to reference it in main.js  -->
                 <button id="camera"><i class="fa-solid fa-camera"></i></button>
@@ -63,7 +63,8 @@
             </form>
         </div>
     </div>
-    <div class="bellDiv" onclick="toggleVis()"><i class="fa-solid fa-bell"></i></div>
+    <div class="bellDiv"><i class="fa-solid fa-bell"></i></div>
 <script src="main.js" type="module"></script>
+<script src="functions.js"></script>
 </body>
 </html>
