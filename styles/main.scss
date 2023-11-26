@@ -228,17 +228,15 @@ main{
        }
     }
     .floatingMenu{
-        width: 80%;
-        left: 10%;
-        // align-items: center;
-        // justify-content: center;
+        width: 90%;
+        left: 5%;
         .formCont{
-            justify-self: center;
-            align-items: center;
-            justify-content: center;
             form{
                 p{
-                    font-size: 1rem;
+                    font-size: 20px;
+                }
+                input{
+                    width: 60%;
                 }
             }
         }
