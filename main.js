@@ -49,3 +49,10 @@ const toggleVis = ()=>{
     }
     event.preventDefault();
 }
+
+function takeImg(){
+    let image = document.querySelector('.quote');
+    html2canvas(image).then(canvas => {
+        document.body.appendChild(canvas)
+    })
+}
