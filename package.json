@@ -1,4 +1,23 @@
 {
+  "name": "cavequotes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "<p>Home of every quotes/fact/joke/poem you need</p> <p>html2cavas</p>",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techboy07/cavequotes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Techboy07/cavequotes/issues"
+  },
+  "homepage": "https://github.com/Techboy07/cavequotes#readme",
   "dependencies": {
     "html2canvas": "^1.4.1"
   }

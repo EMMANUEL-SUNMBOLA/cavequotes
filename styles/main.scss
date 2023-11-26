@@ -2,6 +2,7 @@
 @use 'nav';
 @use 'themes';
 @use 'queries';
+@use "screenshot";
 
 body{
     background-color: variables.$black;
@@ -242,3 +243,5 @@ main{
         }
     }
 }
+
+

@@ -21,7 +21,10 @@
             <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA/cavequotes" class="link git"><i class="fa-brands fa-github"></i></a>
         </div>
     </nav>
-
+<!-- this the wrapper for the canvas element -->
+<div class="screenshot" id="screenshot">
+</div>
+<!-- +++++++++++++++++++++++++ -->
     <main>
 
         <div class="mainsub left">
@@ -43,7 +46,10 @@
                 <h6 id="author">-Caveman</h6>
                 <p class="right"><i class="fa-solid fa-quote-right"></i></p>
                 <button id="copyBtn" onclick="copyInnerText()"><i class="fa-solid fa-copy"></i></button>
-                <button onclick="takeImg()"><i class="fa-solid fa-camera"></i></button>
+                <!-- this is the button that takes the screenshot--> 
+                <!-- i've assigned it an ID to reference it in main.js  -->
+                <button id="camera"><i class="fa-solid fa-camera"></i></button>
+                <!-- i've also removed the click event -->
                 <a href="" target="_blank" id="tweetLink"><i class="fa-brands fa-twitter">Tweet</i></a>
             </div>
         </div>
@@ -58,6 +64,6 @@
         </div>
     </div>
     <div class="bellDiv" onclick="toggleVis()"><i class="fa-solid fa-bell"></i></div>
-<script src="main.js"></script>
+<script src="main.js" type="module"></script>
 </body>
 </html>
