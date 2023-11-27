@@ -59,3 +59,23 @@ const toggleVis = ()=>{
 }
 const bellDiv = document.querySelector('.bellDiv');
 bellDiv.addEventListener("click", toggleVis);
+
+function takeImg2(imgId){
+    html2canvas(document.getElementById(imgId), {
+        onrendered: function(canvas){
+            return canvas2Image.saveAsPNG(canvas);
+        }
+    });
+}
+// const shutter = document.getElementById('#camera');
+// shutter.addEventListener("click", takeImg2)
+
+
+document.querySelector('#camera').addEventListener('click', function() {
+    html2canvas(document.querySelector('.quoteDiv'), {
+      onrendered: function(canvas) {
+        // document.body.appendChild(canvas);
+        return Canvas2Image.saveAsPNG(canvas);
+      }
+    });
+  });
