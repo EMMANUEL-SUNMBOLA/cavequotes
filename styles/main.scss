@@ -25,6 +25,14 @@ main{
     .right{
         .circle{
             color: red;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            outline: 1px solid ;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
         .square{
             color: red;

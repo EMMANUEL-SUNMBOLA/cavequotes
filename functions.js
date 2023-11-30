@@ -50,10 +50,14 @@ copyBtn.addEventListener("click", copyInnerText);
 
 const toggleVis = ()=>{
     let floatingMenu = document.querySelector('.floatingMenu');
+    let bellIcon = document.querySelector(".fa-bell");
     if((floatingMenu.style.display === 'none') || (floatingMenu.style.display === '')){
         floatingMenu.style.display = 'block'
+        bellIcon.classList.replace("fa-bell", "fa-x");
     }else{
+        let bellIcon = document.querySelector(".fa-x");
         floatingMenu.style.display = 'none'
+        bellIcon.classList.replace("fa-x", "fa-bell");
     }
     event.preventDefault();
 }
