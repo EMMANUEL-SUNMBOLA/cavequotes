@@ -67,9 +67,6 @@ function takeImg2(imgId){
         }
     });
 }
-// const shutter = document.getElementById('#camera');
-// shutter.addEventListener("click", takeImg2)
-
 
 document.querySelector('#camera').addEventListener('click', function() {
     html2canvas(document.querySelector('.quoteDiv'), {
@@ -79,3 +76,14 @@ document.querySelector('#camera').addEventListener('click', function() {
       }
     });
   });
+
+  function shuffleStyle(){
+    const quoteDiv = document.querySelector('.quoteDiv');
+    let styles = ['circle', 'square', 'cyan', 'regular'];
+    let index = Math.floor(Math.random() * styles.length);
+    quoteDiv.classList.remove(...styles);
+    quoteDiv.classList.add(styles[index]);
+    // alert(styles[index])
+  }
+  const shuffle = document.querySelector('#shuffle');
+  shuffle.addEventListener("click", shuffleStyle);

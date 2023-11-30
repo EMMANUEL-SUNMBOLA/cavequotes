@@ -23,7 +23,17 @@ main{
     }
     
     .right{
-        .quoteDiv{
+        .circle{
+            color: red;
+        }
+        .square{
+            color: red;
+        }
+        .cyan{
+            color: red;
+        }
+        
+        .regular{
             background-color: variables.$neon;
             width: 100%;
             height: fit-content;
